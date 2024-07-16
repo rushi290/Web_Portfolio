@@ -449,8 +449,10 @@ h6 {
   color: #6f6f6f;
   margin: 10px 0 0 0;
   font-size: 22px;
+  text-align: center;
+  line-height: 40px;
+  width: 50%;
 }
-
 #hero .btn-about {
   font-family: "Raleway", sans-serif;
   text-transform: uppercase;
