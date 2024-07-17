@@ -175,7 +175,6 @@ h6 {
 */
 .navbar {
   padding: 0;
-  width: 45%;
 }
 
 .navbar ul {
@@ -451,7 +450,6 @@ h6 {
   font-size: 22px;
   text-align: center;
   line-height: 40px;
-  width: 50%;
 }
 #hero .btn-about {
   font-family: "Raleway", sans-serif;
