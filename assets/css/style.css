@@ -504,14 +504,17 @@ h6 {
 /* Portfolio grid box */
 
 #portfolio .portfolio-item {
-  margin: 0 0 1px;
-  right: 0;
-  border: 0px outset rgba(255, 255, 255, 0.5);
+    margin: 0 20px 20px 20px;
+    right: 0;
+    border: 0px outset rgba(255, 255, 255, 0.5);
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+    padding-top: 20px;
 }
 
 #portfolio .portfolio-item:hover {
   transition: 0.3s;
-  box-shadow: 0px 3px 55px rgba(0,0,0,0.2);
+  box-shadow: 0px 3px 10px rgba(0,0,0,0.2);
+  padding-top: 20px;
 }
 
 #portfolio .portfolio-item .portfolio-link {
@@ -569,6 +572,7 @@ h6 {
 #portfolio .portfolio-item .portfolio-caption p {
   font-size: 1em;
   margin: 0;
+  padding-top: 10px;
 }
 
 #portfolio * {
