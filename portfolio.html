@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>My - Portfolio</title>
+  <title>Services</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -34,432 +34,168 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
-  <style>
-    *,
-*::before,
-*::after {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-weight: 400;
-}
-
-:root {
-  font-size: 10px;
-  --padding: 3rem;
-}
-
-::-moz-selection {
-  background: rgb(17, 17, 17, 0.99);
-  color: rgb(89, 89, 89);
-}
-
-::selection {
-  background: rgb(17, 17, 17, 0.99);
-  color: rgb(89, 89, 89);
-}
-
-html {
-  font-family: "Wildtype", -apple-system, BlinkMacSystemFont, sans-serif;
-}
-@supports (font-variation-settings: normal) {
-  html {
-    font-family: "Wildtype", -apple-system, BlinkMacSystemFont, sans-serif;
-  }
-}
-
-body {
-  background: #1a1a1a;
-  color: white;
-  margin: 0 auto;
-  max-width: 150rem;
-  overflow-x: hidden;
-}
-
-h1,
-h2,
-h3,
-h4,
-p,
-a,
-span {
-  text-rendering: geometricPrecision;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-h1 {
-  font-weight: 500;
-  font-size: 3.5rem;
-  line-height: 1.3;
-}
-
-a {
-  text-decoration: none;
-  color: white;
-  -webkit-filter: brightness(0.8);
-  filter: brightness(0.8);
-  -webkit-transition: 150ms;
-  -o-transition: 150ms;
-  transition: 150ms;
-}
-
-a,
-a * {
-  border-radius: 0.15rem;
-}
-
-a:hover {
-  -webkit-filter: brightness(1.09);
-  filter: brightness(1.09);
-}
-
-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-header a {
-  font-size: 2.2rem;
-  color: white;
-  -webkit-filter: brightness(0.8);
-  filter: brightness(0.8);
-  padding: var(--padding);
-}
-
-header nav ul {
-  list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.grid {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1.5rem 1fr 1.5rem 1fr 1.5rem 1fr 1.5rem 1fr 1.5rem 1fr;
-  grid-template-columns: repeat(6, 1fr);
-  grid-row-gap: 1.5rem;
-  grid-column-gap: 1.5rem;
-  margin: auto;
-}
-
-.full {
-  -ms-grid-column: 1;
-  grid-column-start: 1;
-  -ms-grid-column-span: 7;
-  grid-column-end: span 7;
-}
-
-.intro {
-  -ms-grid-column: 1;
-  grid-column-start: 1;
-  -ms-grid-column-span: 5;
-  grid-column-end: span 5;
-  margin-top: var(--padding);
-}
-
-.project-grid {
-  -ms-grid-column: 1;
-  grid-column-start: 1;
-  -ms-grid-column-span: 7;
-  grid-column-end: span 7;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 2rem 1fr 2rem 1fr 2rem 1fr 2rem 1fr 2rem 1fr;
-  grid-template-columns: repeat(6, 1fr);
-  grid-row-gap: 15rem;
-  grid-column-gap: 2rem;
-  margin: 6rem auto;
-}
-
-.project-grid a {
-  -ms-grid-column-span: 2;
-  grid-column: span 2;
-  color: white;
-  min-height: 56.25%;
-}
-
-.project-grid a h3 {
-  font-size: 2.15rem;
-  margin: 1.25rem 0;
-}
-
-.project-grid a p {
-  font-size: 1.5rem;
-  color: lightgrey;
-}
-
-.project-grid a img {
-  margin-bottom: 0;
-  -o-object-fit: cover;
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-}
-
-main {
-  padding: 3rem var(--padding);
-}
-
-footer {
-  margin-top: 10rem;
-  padding: 6rem var(--padding);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-}
-
-footer > * {
-  margin-top: var(--padding);
-}
-
-footer h2 {
-  font-size: 4.5rem;
-}
-
-.button {
-  padding: 2rem 3rem;
-  font-size: 2.5rem;
-  background: rgb(142, 142, 142);
-  color: #1a1a1a;
-}
-
-.button:hover {
-  -webkit-filter: brightness(1.5);
-  filter: brightness(1.5);
-}
-
-@media (max-width: 960px) {
-  :root {
-    font-size: 9px;
-  }
-  .intro {
-    -ms-grid-column: 1;
-    grid-column-start: 1;
-    -ms-grid-column-span: 7;
-    grid-column-end: span 7;
-  }
-  .project-grid {
-    grid-row-gap: 16rem;
-  }
-  .project-grid a h3 {
-    font-size: 2.5rem;
-    margin-bottom: 1.15rem;
-  }
-  .project-grid a {
-    -ms-grid-column-span: 3;
-    grid-column: span 3;
-  }
-}
-
-@media (max-width: 700px) {
-  :root {
-    font-size: 8px;
-    --padding: 2rem;
-  }
-  .project-grid {
-    grid-row-gap: 24rem;
-  }
-  .project-grid a {
-    -ms-grid-column-span: 6;
-    grid-column: span 6;
-  }
-  .project-grid a h3 {
-    font-size: 3rem;
-    margin-top: 2rem;
-  }
-  .project-grid a p {
-    font-size: 1.75rem;
-  }
-  .project-grid a img {
-    width: 100vw;
-    margin: auto calc(50% - 50vw);
-  }
-}
-
-@media (min-width: 4000px) {
-  :root {
-    font-size: 40px;
-  }
-}
-
-  </style>
 </head>
 
 <body>
 
-   <!-- ======= Header ======= -->
-   <header id="header" class="fixed-top">
-    <div class="container-fluid d-flex justify-content-between align-items-center">
-
-      <h1 class="logo me-auto me-lg-0"><a href="index.html">Rushabh.U</a></h1>
-      <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
-
-      <nav id="navbar" class="navbar order-last order-lg-0">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="resume.html">Resume</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a class="active" href="portfolio.html">Portfolio</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
-
-      <div class="header-social-links">
-        <a href="skype:live:upadhyayrushabh?userinfo" class="skype" target="_blank"><i class="bi bi-skype"></i></a>
-        <a href="https://www.linkedin.com/in/rushabh-upadhyay/" class="linkedin" target="_blank"><i class="bi bi-linkedin"></i></i></a>
-      </div>
-
-    </div>
-
-  </header><!-- End Header -->
-
-  <main class="grid">
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top">
+      <div class="container-fluid d-flex justify-content-between align-items-center">
   
-    <section class="project-grid">
-    <a href="#">
-      <img
-      src="https://images.unsplash.com/photo-1587588354456-ae376af71a25?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
-      alt=""
-      loading="lazy"
-      />
-      <h3>Lorem ipsum dolor</h3>
-      <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-      dolore magna aliqua.
-      </p>
-    </a>
-    <a href="#">
-      <img
-      src="https://images.unsplash.com/photo-1588913262089-69cf0af9adc2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
-      alt=""
-      loading="lazy"
-      />
-      <h3>Lorem ipsum dolor</h3>
-      <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-      dolore magna aliqua.
-      </p>
-    </a>
-    <a href="#">
-      <img
-      src="https://images.unsplash.com/photo-1589648409377-21889dbd786f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
-      alt=""
-      loading="lazy"
-      />
-      <h3>Lorem ipsum dolor</h3>
-      <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-      dolore magna aliqua.
-      </p>
-    </a>
-    <a href="#">
-      <img
-      src="https://images.unsplash.com/photo-1589967040061-d33c463bf973?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
-      alt=""
-      loading="lazy"
-      />
-      <h3>Lorem ipsum dolor</h3>
-      <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-      dolore magna aliqua.
-      </p>
-    </a>
-    <a href="#">
-      <img
-      src="https://images.unsplash.com/photo-1590076082844-9cbfcef747d7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
-      alt=""
-      loading="lazy"
-      />
-      <h3>Lorem ipsum dolor</h3>
-      <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-      dolore magna aliqua.
-      </p>
-    </a>
-    <a href="#">
-      <img
-      src="https://images.unsplash.com/photo-1588358013128-d99f36f29de7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
-      alt=""
-      loading="lazy"
-      />
-      <h3>Lorem ipsum dolor</h3>
-      <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-      dolore magna aliqua.
-      </p>
-    </a>
-    <a href="#">
-      <img
-      src="https://images.unsplash.com/photo-1589813252717-d47d08b45be1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
-      alt=""
-      loading="lazy"
-      />
-      <h3>Lorem ipsum dolor</h3>
-      <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-      dolore magna aliqua.
-      </p>
-    </a>
-    <a href="#">
-      <img
-      src="https://images.unsplash.com/photo-1589736995900-511d34373863?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
-      alt=""
-      loading="lazy"
-      />
-      <h3>Lorem ipsm dolor</h3>
-      <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-      dolore magna aliqua.
-      </p>
-    </a>
-    <a href="#">
-      <img
-      src="https://images.unsplash.com/photo-1590235539719-7095412d89ac?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
-      alt=""
-      loading="lazy"
-      />
-      <h3>Lorem ipsum dolor</h3>
-      <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-      dolore magna aliqua.
-      </p>
-    </a>
-    </section>
+        <h1 class="logo me-auto me-lg-0"><a href="index.html">RB-ECOMBUILDERS</a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+  
+        <nav id="navbar" class="navbar order-last order-lg-0">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a class="active" href="services.html">Services</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav><!-- .navbar -->
+  
+        <div class="header-social-links">
+          <a href="skype:live:upadhyayrushabh?userinfo" class="skype" target="_blank"><i class="bi bi-skype"></i></a>
+          <a href="https://www.linkedin.com/in/rushabh-upadhyay/" class="linkedin" target="_blank"><i class="bi bi-linkedin"></i></i></a>
+        </div>
+  
+      </div>
+  
+    </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services">
+      <div class="container aos-init aos-animate" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Services</h2>
+          <p>In today’s digital age, your website is often the first impression potential customers have of your business.  Make it count with our professional website development services. With over 7 years of experience in e-commerce website development, we specialize in creating stunning, functional, and user-friendly websites that drive results.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch aos-init aos-animate" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box iconbox-blue">
+              <div class="icon">
+                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,521.0016835830174C376.1290562159157,517.8887921683347,466.0731472004068,529.7835943286574,510.70327084640275,468.03025145048787C554.3714126377745,407.6079735673963,508.03601936045806,328.9844924480964,491.2728898941984,256.3432110539036C474.5976632858925,184.082847569629,479.9380746630129,96.60480741107993,416.23090153303,58.64404602377083C348.86323505073057,18.502131276798302,261.93793281208167,40.57373210992963,193.5410806939664,78.93577620505333C130.42746243093433,114.334589627462,98.30271207620316,179.96522072025542,76.75703585869454,249.04625023123273C51.97151888228291,328.5150500222984,13.704378332031375,421.85034740162234,66.52175969318436,486.19268352777647C119.04800174914682,550.1803526380478,217.28368757567262,524.383925680826,300,521.0016835830174"></path>
+                </svg>
+                <i class="bx bxl-dribbble"></i>
+              </div>
+              <h4><a href="">Website Development and Design</a></h4>
+              <p>Creating responsive and user-friendly designs that enhance user experience.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0 aos-init aos-animate" data-aos="zoom-in" data-aos-delay="200">
+            <div class="icon-box iconbox-orange ">
+              <div class="icon">
+                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,521.0016835830174C376.1290562159157,517.8887921683347,466.0731472004068,529.7835943286574,510.70327084640275,468.03025145048787C554.3714126377745,407.6079735673963,508.03601936045806,328.9844924480964,491.2728898941984,256.3432110539036C474.5976632858925,184.082847569629,479.9380746630129,96.60480741107993,416.23090153303,58.64404602377083C348.86323505073057,18.502131276798302,261.93793281208167,40.57373210992963,193.5410806939664,78.93577620505333C130.42746243093433,114.334589627462,98.30271207620316,179.96522072025542,76.75703585869454,249.04625023123273C51.97151888228291,328.5150500222984,13.704378332031375,421.85034740162234,66.52175969318436,486.19268352777647C119.04800174914682,550.1803526380478,217.28368757567262,524.383925680826,300,521.0016835830174"></path>
+                </svg>
+                <i class="bx bxl-dribbble"></i>
+              </div>
+              <h4><a href="">E-commerce Solutions</a></h4>
+              <p>Setting up and customizing online stores using Shopify, WooCommerce, or Magento.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0 aos-init aos-animate" data-aos="zoom-in" data-aos-delay="300">
+            <div class="icon-box iconbox-pink">
+              <div class="icon">
+                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,521.0016835830174C376.1290562159157,517.8887921683347,466.0731472004068,529.7835943286574,510.70327084640275,468.03025145048787C554.3714126377745,407.6079735673963,508.03601936045806,328.9844924480964,491.2728898941984,256.3432110539036C474.5976632858925,184.082847569629,479.9380746630129,96.60480741107993,416.23090153303,58.64404602377083C348.86323505073057,18.502131276798302,261.93793281208167,40.57373210992963,193.5410806939664,78.93577620505333C130.42746243093433,114.334589627462,98.30271207620316,179.96522072025542,76.75703585869454,249.04625023123273C51.97151888228291,328.5150500222984,13.704378332031375,421.85034740162234,66.52175969318436,486.19268352777647C119.04800174914682,550.1803526380478,217.28368757567262,524.383925680826,300,521.0016835830174"></path>
+                </svg>
+                <i class="bx bxl-dribbble"></i>
+              </div>
+              <h4><a href="">Website Maintenance</a></h4>
+              <p>Providing ongoing maintenance and support services to ensure websites are secure and up-to-date</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+    <!-- ======= Skills Section ======= -->
+    <section id="skills" class="skills">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Skills</h2>
+          <p>I've built 50+ WordPress sites across education, medical, and real estate sectors, along with 3 Shopify stores including clothing and multi-brand outlets.</p>
+        </div>
+
+        <div class="row skills-content">
+
+          <div class="col-lg-12">
+
+            <div class="progress">
+              <span class="skill">HTML <i class="val">80%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">CSS <i class="val">65%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 65%;"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Plugin/App/Integration <i class="val">92%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 92%;"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">CMS/Theme_Based_Website <i class="val">98%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 98%;"></div>
+              </div>
+            </div>
+            
+            <div class="progress">
+              <span class="skill">WordPress/woocommerce/CMS <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Shopify/Store_Setup/CMS <i class="val">55%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100" style="width: 55%;"></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Skills Section -->
   </main><!-- End #main -->
 
-<!-- ======= Footer ======= -->
-<footer id="footer">
-  <div class="container">
-    <div class="credits">
-      <!-- All the links in the footer should remain intact. -->
-      <!-- You can delete the links only if you purchased the pro version. -->
-      <!-- Licensing information: https://bootstrapmade.com/license/ -->
-      <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/kelly-free-bootstrap-cv-resume-html-template/ -->
-      Designed by <a href="https://rushi290.github.io/Web_Portfolio/index.html">Rushabh Upadhyaya</a>
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/kelly-free-bootstrap-cv-resume-html-template/ -->
+        Designed by <a href="https://rushi290.github.io/Web_Portfolio/index.html">Rushabh Upadhyaya</a>
+      </div>
     </div>
-  </div>
-</footer><!-- End  Footer -->
+  </footer><!-- End  Footer -->
 
   <div id="preloader"></div>
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
